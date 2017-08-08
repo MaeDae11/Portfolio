@@ -2,18 +2,18 @@
 cloud: #98878F
 sunset: #985E6D
 evening: #192231  */
+/*#FCECED light pink for background  */
 
 body {
     margin: 0;
 }
 
-svg {
-    height: 600px
-}
+
 .main-banner {
-    background-image: url("../images/background2.jpg");
+    background-image: url("../images/background6.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
+    opacity: .8;
 }    
 
 #downDiagL,
@@ -39,7 +39,7 @@ svg {
 #M {
     stroke: white;
     stroke-width: 5px;
-    stroke-dasharray: 2000;
+    stroke-dasharray: 1700;
     stroke-dashoffset: 500;
     stroke-linecap: butt;
     -webkit-transition: all 4s ease-out;
@@ -50,10 +50,16 @@ svg {
 }
 
 #L:hover,
-#M:hover,
 #K:hover {
-    stroke: #985E6D;
+    stroke: white;
     cursor: pointer;
     stroke-dashoffset: -500;
     stroke-dasharray: 2000;
+}
+
+#M:hover {
+    stroke: white;
+    cursor: pointer;
+    stroke-dashoffset: -1500;
+    stroke-dasharray: 3000;
 }
