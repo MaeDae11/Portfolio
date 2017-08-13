@@ -7,7 +7,21 @@ evening: #192231  */
 body {
     margin: 0;
 }
-
+menu {
+    margin: 0;
+    padding-top: 30px;
+}
+.menu-navigation {
+    display: fixed;
+    top: 0;
+    z-index: 10000;
+}
+.menu-navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+}
 
 .main-banner {
     background-image: url("../images/background6.jpg");
@@ -15,7 +29,6 @@ body {
     background-size: cover; 
     opacity: .8;
 }    
-
 #downDiagL,
 #downDiagK,
 #downDiagL,
