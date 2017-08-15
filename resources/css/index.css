@@ -9,12 +9,18 @@ body {
 }
 menu {
     margin: 0;
-    padding-top: 30px;
+    padding: 0px;
 }
-.menu-navigation {
-    display: fixed;
+
+.top-nav-container {
+    position: fixed;
     top: 0;
     z-index: 10000;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
 }
 .menu-navigation a {
     text-decoration: none;
@@ -28,6 +34,7 @@ menu {
     background-repeat: no-repeat;
     background-size: cover; 
     opacity: .8;
+    top: 0;
 }    
 #downDiagL,
 #downDiagK,
@@ -75,4 +82,24 @@ menu {
     cursor: pointer;
     stroke-dashoffset: -1500;
     stroke-dasharray: 3000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #192231;
+    color: white;
 }
