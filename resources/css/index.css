@@ -89,7 +89,10 @@ menu {
 }
 
 
-
+.about-container {
+    height: 700px;
+    background-color: #FCECED;
+}
 
 
 
@@ -106,7 +109,9 @@ menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #192231;
+    background-image: url("../images/footer_background2.svg");
+    background-repeat: no-repeat;
+    background-size: cover; 
     color: white;
 }
 
