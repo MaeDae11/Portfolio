@@ -19,9 +19,13 @@ menu {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     height: 60px;
 }
+.menu-navigation {
+    text-align: right;
+    padding-right: 40px;
+}
+.bottom-menu-navigation a,
 .menu-navigation a {
     text-decoration: none;
     color: white;
@@ -91,10 +95,12 @@ menu {
 
 
 
-
-
-
-
+.bottom-menu-navigation {
+    padding-left: 30px;
+}
+.my-name {
+    padding-right: 30px;
+}
 .footer-container {
     height: 200px;
     display: flex;
@@ -102,4 +108,42 @@ menu {
     justify-content: space-between;
     background: #192231;
     color: white;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 760px){
+    .bottom-menu-navigation span:after,
+    .bottom-menu-navigation span:before,
+    .menu-navigation a:after,
+    .menu-navigation a:before {
+        border: 1px solid transparent;
+        bottom: 0px;
+        content: " ";
+        display: block;
+        transition: all 280ms ease-in-out;
+        width: 0;
+    }
+    
+    .bottom-menu-navigation span:hover:after,
+    .bottom-menu-navigation span:hover:before,
+    .menu-navigation a:hover:after,
+    .menu-navigation a:hover:before {
+        border-color:white;
+        transition: width 350ms ease-in-out;
+        width: 100%;
+        
+    }
+    
+    .bottom-menu-navigation span:hover:before,
+    .menu-navigation a:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 100%;
+    }
+    
+    
 }
