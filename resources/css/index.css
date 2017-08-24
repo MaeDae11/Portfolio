@@ -4,14 +4,18 @@ sunset: #985E6D
 evening: #192231  */
 /*#FCECED light pink for background  */
 
+/* font-family: 'Ubuntu', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Josefin Sans', sans-serif; */
+
 body {
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 menu {
     margin: 0;
     padding: 0px;
 }
-
 .top-nav-container {
     position: fixed;
     top: 0;
@@ -33,46 +37,65 @@ menu {
     margin-right: 20px;
 }
 
+/*************** Banner container ***************/
 .main-banner {
     height: 800px;
-    background-image: url("../images/background8.jpg");
+    background-image: url("../images/background6.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     opacity: .8;
     top: 0;
-}    
-
-
+    display: flex;
+}   
+.my-name {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    letter-spacing: 3px;
+    margin: auto;
+    font-size: 40px;
+}
+/* ************** HELLO SVG ****************** */
+ /*hello Svg  */
+.main-banner svg {
+    height: 500px;
+}
 #L2,
 #O,
 #L1,
 #H_1_,
 #E {
-    stroke: white;
-    stroke-width: 5px;
     stroke-dasharray: 2000;
     stroke-dashoffset: 0;
     stroke-linecap: butt;
     -webkit-transition: all 3s ease-out;
         -moz-transition: all 3s ease-out;
-        -ms-transition: all 3s ease-out;
-    -o-transition: all 3s ease-out;
-    transition: all 3s ease-out;
+         -ms-transition: all 3s ease-out;
+          -o-transition: all 3s ease-out;
+             transition: all 3s ease-out;
 }
-
 #L2:hover,
 #O:hover,
 #L1:hover,
 #H_1_:hover,
 #E:hover {
-    stroke: white;
     cursor: pointer;
     stroke-dashoffset: -500;
     stroke-dasharray: 2000;
 }
+
+/* **************End of SVG****************** */
+
+
+/* **************Main content****************** */
 .about-container {
-    height: 700px;
+    min-height: 700px;
     background-color: #FCECED;
+}
+.title-for-section {
+    border: 2px solid #98878F;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -82,9 +105,7 @@ menu {
 .bottom-menu-navigation {
     padding-left: 30px;
 }
-.my-name {
-    padding-right: 30px;
-}
+
 .footer-container {
     height: 200px;
     display: flex;

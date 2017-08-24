@@ -4,5 +4,5 @@ $(window).scroll(function() {
 // scroll effect for first window
 const parallax = () => {
     const wScroll = $(window).scrollTop();
-    $('.parallax').css('background-position', 'center ' + (wScroll*.5) + 'px')
+    $('.parallax').css('background-position', 'center ' + (wScroll) + 'px')
 }
