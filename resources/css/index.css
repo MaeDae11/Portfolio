@@ -35,61 +35,41 @@ menu {
 
 .main-banner {
     height: 800px;
-    background-image: url("../images/background7.jpg");
+    background-image: url("../images/background8.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     opacity: .8;
     top: 0;
 }    
-#downDiagL,
-#downDiagK,
-#downDiagL,
-#topDiagL,
-#acrossL,
-#bottomDiagK,
-#bottomDiagK-2,
-#topDiagK,
-#downDiagK,
-#topMidM,
-#leftDiagM,
-#bottomMidM,
-#bottomDownM,
-#upK {    
-    stroke: white;
-} 
 
 
-#L,
-#K,
-#M {
+#L2,
+#O,
+#L1,
+#H_1_,
+#E {
     stroke: white;
     stroke-width: 5px;
-    stroke-dasharray: 1700;
-    stroke-dashoffset: 500;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
     stroke-linecap: butt;
-    -webkit-transition: all 4s ease-out;
-    -moz-transition: all 4s ease-out;
-    -ms-transition: all 4s ease-out;
-    -o-transition: all 4s ease-out;
-    transition: all 4s ease-out;
+    -webkit-transition: all 3s ease-out;
+        -moz-transition: all 3s ease-out;
+        -ms-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
 }
 
-#L:hover,
-#K:hover {
+#L2:hover,
+#O:hover,
+#L1:hover,
+#H_1_:hover,
+#E:hover {
     stroke: white;
     cursor: pointer;
     stroke-dashoffset: -500;
     stroke-dasharray: 2000;
 }
-
-#M:hover {
-    stroke: white;
-    cursor: pointer;
-    stroke-dashoffset: -1500;
-    stroke-dasharray: 3000;
-}
-
-
 .about-container {
     height: 700px;
     background-color: #FCECED;
