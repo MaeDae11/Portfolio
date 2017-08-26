@@ -10,7 +10,8 @@ font-family: 'Josefin Sans', sans-serif; */
 
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
 }
 menu {
     margin: 0;
@@ -118,10 +119,20 @@ menu {
     width: 50%;
 }
 .skills-container {
+
+}
+.skills-icons {
     display: flex;
+    max-width: 1024;
+    flex-wrap: wrap;
+    margin: auto;
 }
 .skills-container img {
     height: 90px;
+}
+.icon {
+    text-align: center;
+    padding: 20px;
 }
 
 
@@ -161,6 +172,21 @@ menu {
         height: 300px;
         width: 500px;
     }
+    /* skills container */
+    .skills-row-two,
+    .skills-row-one {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .skills-container img {
+        height: 50px;
+    }
+    .icon {
+        text-align: center;
+        padding: 10px;
+    }
+    /* end of skills container */
 }
 
 
@@ -180,6 +206,28 @@ menu {
         height: 400px;
         width: 500px;
     }
+
+    /* skills container */
+    .skills-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .skills-row-two,
+    .skills-row-one {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .skills-container img {
+        height: 70px;
+    }
+    .icon {
+        text-align: center;
+        padding: 20px;
+    }
+    /* end of skills container */
+    
 
     .bottom-menu-navigation span:after,
     .bottom-menu-navigation span:before,
@@ -213,7 +261,7 @@ menu {
     
 }
 
-@media only screen and (min-width: 984px){
+@media only screen and (min-width:1024px){
     .main-banner {
         position: relative;
         height: 800px;
@@ -229,5 +277,12 @@ menu {
         top: 0;
         height: 500px;
         width: 1000px;
+    }
+    .skills-container img {
+        height: 80px;
+    }
+    .skills-row-two,
+    .skills-row-one {
+        width: 1024px;
     }
 }
