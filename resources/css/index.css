@@ -105,7 +105,6 @@ menu {
 .contact-container,
 .about-container {
     min-height: 400px;
-    background-color:  rgba(175,238,238, 0.4);
     border-bottom: .75px solid #685B51;
 }
 .title-for-section {
@@ -116,10 +115,14 @@ menu {
 }
 .project-one {
     display: flex;
-    height: 400px;
+    width: 50%;
 }
-
-
+.skills-container {
+    display: flex;
+}
+.skills-container img {
+    height: 90px;
+}
 
 
 .bottom-menu-navigation {
