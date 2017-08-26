@@ -39,8 +39,12 @@ menu {
 
 /*************** Banner container ***************/
 .main-banner {
-    height: 800px;
-    background-image: url("../images/background6.jpg");
+    position: relative;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(173, 216, 230, 0.9), 
+        rgba(25, 34, 49, 0.40)
+      ), url("../images/background5.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     opacity: .8;
@@ -50,15 +54,24 @@ menu {
 .my-name {
     font-family: 'Playfair Display', serif;
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin: auto;
-    font-size: 40px;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
 }
 /* ************** HELLO SVG ****************** */
  /*hello Svg  */
-.main-banner svg {
-    height: 500px;
+.hello-svg svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 300px;
+    width: 400px;
 }
+
 #L2,
 #O,
 #L1,
@@ -79,25 +92,32 @@ menu {
 #H_1_:hover,
 #E:hover {
     cursor: pointer;
-    stroke-dashoffset: -500;
     stroke-dasharray: 2000;
+    stroke-dashoffset: -500;
 }
 
 /* **************End of SVG****************** */
 
 
 /* **************Main content****************** */
+.projects-container,
+.skills-container,
+.contact-container,
 .about-container {
-    min-height: 700px;
-    background-color: #FCECED;
+    min-height: 400px;
+    background-color:  rgba(175,238,238, 0.4);
+    border-bottom: .75px solid #685B51;
 }
 .title-for-section {
-    border: 2px solid #98878F;
+    border: 2px solid grey;
     width: 200px;
     margin: 0 auto;
     text-align: center;
 }
-
+.project-one {
+    display: flex;
+    height: 400px;
+}
 
 
 
@@ -111,7 +131,10 @@ menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("../images/footer_background2.svg");
+    background-image: linear-gradient(
+        rgba(173, 216, 230, 0.9), 
+        rgba(25, 34, 49, 0.40)
+      ), url("../images/background5.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     color: white;
@@ -119,10 +142,42 @@ menu {
 
 
 
+@media only screen and (min-width: 500px){
+    .main-banner {
+        height: 400px;
+    }
+    .my-name {
+        padding-top: 120px;
+        letter-spacing: 3px;
+        font-size: 25px;
+    }
+    .hello-svg svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 300px;
+        width: 500px;
+    }
+}
 
 
+@media only screen and (min-width: 764px){
+    .main-banner {
+        height: 600px;
+    }
+    .my-name {
+        padding-top: 90px;
+        letter-spacing: 3px;
+        font-size: 30px;
+    }
+    .hello-svg svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 400px;
+        width: 500px;
+    }
 
-@media only screen and (min-width: 760px){
     .bottom-menu-navigation span:after,
     .bottom-menu-navigation span:before,
     .menu-navigation a:after,
@@ -153,4 +208,23 @@ menu {
     }
     
     
+}
+
+@media only screen and (min-width: 984px){
+    .main-banner {
+        position: relative;
+        height: 800px;
+    }
+    .my-name {
+        color: white;
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+    .hello-svg svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 500px;
+        width: 1000px;
+    }
 }
