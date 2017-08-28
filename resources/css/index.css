@@ -118,22 +118,20 @@ menu {
     display: flex;
     width: 50%;
 }
-.skills-container {
 
-}
-.skills-icons {
+/* skills container */
+.skills-container {
     display: flex;
-    max-width: 1024;
-    flex-wrap: wrap;
-    margin: auto;
+    justify-content: space-around;
 }
 .skills-container img {
-    height: 90px;
+    height: 60px;
 }
 .icon {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
+/* end of skills container */
 
 
 .bottom-menu-navigation {
@@ -175,12 +173,10 @@ menu {
     /* skills container */
     .skills-row-two,
     .skills-row-one {
-        display: flex;
-        justify-content: space-around;
         width: 100%;
     }
     .skills-container img {
-        height: 50px;
+        height: 70px;
     }
     .icon {
         text-align: center;
@@ -223,6 +219,7 @@ menu {
         height: 70px;
     }
     .icon {
+        font-size: 20px;
         text-align: center;
         padding: 20px;
     }
